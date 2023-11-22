@@ -1,0 +1,67 @@
+section{
+display: flex;
+flex-direction: column;
+border: 1px solid var(--primary-color-dark);
+border-radius: 5px;
+padding: 3px;
+background-color: var(--base-color);
+
+}
+.parties{
+    flex: 100%;
+    display: flex;
+}
+.parties{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:  0; 
+}
+.medio {
+    flex-direction: row-reverse;
+}
+.img-poemas{
+    flex:35%;
+    margin-left: 50px;
+    margin-right: 30px;
+    margin-bottom: 20px;
+    width: 200px;
+    height: 300px;
+    box-shadow: 10px 10px 8px var(--primary-color-dark);
+}
+
+.parties .img-poemas{
+    transition: transform 0.9s;
+    transform-style: preserve-3d;
+}
+
+.img-poemas:hover{
+    transform: rotateY(40deg);
+}
+.poema{
+    flex: 65%;
+}
+
+.poema h3{
+    margin: 20px 0;
+    text-align: center;
+    color: var(--primary-color-dark);
+    font-size: 24px;
+}
+.poema pre{
+    text-align: center;
+    font-size: 16px;
+}
+
+
+
+@media screen and (max-width:750px){
+    .parties{
+        flex-direction: column;
+    }
+    .img-poemas{
+        height: 30%;
+    }
+    }
+
+

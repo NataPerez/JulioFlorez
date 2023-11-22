@@ -1,0 +1,44 @@
+.container{
+    display: flex;
+    flex-direction: row-reverse;
+}
+aside{
+    background-color: var(--primary-color);
+    width: 25%;
+    padding: 5px;
+}
+section{
+    width: 75%;
+}
+
+@media (max-width:880px){
+    .container aside{
+        width: 20%;
+    }
+    .container section{
+        width: 80%;
+
+.poema pre{
+    padding: 0;
+    font-size: 13px;
+    }
+    
+    }
+}
+
+@media screen and (max-width:700px){
+
+    header{
+        flex-direction: column;
+    }
+    .container{
+        flex-direction: column;
+    }
+    .container aside{
+        width: 60%;
+        align-self: center;
+    }
+    .container section {
+        width: 100%;
+    }
+}

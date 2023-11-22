@@ -1,0 +1,37 @@
+aside{
+        border-top: solid 1.5px var(--primary-color-dark);
+}
+
+ aside img{
+width: 100%;
+height: 220px;
+margin-top: 10px;
+border: solid 2px var(--primary-color-dark)
+
+}
+
+.poetas img{
+    width: 100%;
+    height: 100px;
+    object-fit: cover;
+    margin-bottom: 40px;
+    border: solid 2px var(--primary-color-dark);
+}
+
+.poetas h2{
+    opacity: 0.3;
+    position: absolute;
+    margin-top: -110px;
+    margin-left: 30px;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    color: whitesmoke;
+    text-transform: uppercase;
+    font-size: 16px;
+    transition: all .4s;
+}
+.poetas:hover h2 {
+    transform: scale(1.2);
+    opacity: 1;
+}

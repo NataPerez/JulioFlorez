@@ -1,0 +1,19 @@
+header{
+    display: flex;
+    background-color:black;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+.img-header{
+    flex: 20%;
+    margin: 0;
+    height: 100px;
+
+}
+h1{
+    flex: 80%;
+    color:var(--base-color);
+    text-align: center;
+    font-size: 50px;
+    padding-top: 20px;
+}

@@ -1,0 +1,43 @@
+.flipcard{
+    text-align: center;
+    color:var(--base-color);
+    margin-bottom: 40px;
+
+}
+.flipcard-inner{
+    text-align: center;
+    transition: transform 0.9s;
+    transform-style: preserve-3d;
+}
+.flipcard:hover .flipcard-inner{
+    transform: rotateY(180deg);
+}
+
+.flipcard-inner-front,
+.flipcard-inner-back{
+    backface-visibility: hidden;
+}
+
+.flipcard-inner-back{
+    position: absolute;
+    margin-top: -230px;
+    padding: 12px 0;
+    background-color: var(--primary-color-dark);
+    border: solid 2px var(--base-color);
+    border-radius: 10px;
+}
+
+.flipcard-inner-back{
+        transform: rotateY(180deg);
+}
+
+@media (max-width:1000px){
+    .flipcard-inner-back{
+        font-size: 1vw;
+    }
+}
+@media (max-width:700px){
+    .flipcard-inner-back{
+        font-size: 2.5vw;
+    }
+}
